@@ -1,0 +1,19 @@
+{
+  "name": "scar-platform",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "dev": "pnpm --filter @scar/web dev",
+    "build": "pnpm --filter @scar/web build",
+    "lint": "pnpm --filter @scar/web lint",
+    "typecheck": "pnpm -r typecheck",
+    "prisma": "pnpm --filter @scar/db prisma",
+    "db:generate": "pnpm --filter @scar/db prisma generate",
+    "db:validate": "pnpm --filter @scar/db prisma validate",
+    "db:seed": "pnpm --filter @scar/db prisma db seed"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
